@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+	<!-- Подключаем библиотеку Prism.js -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet"/>	
+  	<link rel="stylesheet" type="text/css" href="home.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>  	
+    <script src="syntax.js"></script>
+    <title>Polar - Programming Language</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="https://t.me/polarlang">Blog</a>
+        <a href="https://slavlned.github.io/polar-docs/">Docs</a>
+        <a href="https://github.com/slavlned/polar/releases">Download</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-block">
+            <h1>Polar</h1>
+            <p>Your compass in the programming world.</p>
+            <div class="code-example language-polar">
+                <pre class="code-pre"><code>
+func introducing() = {
+	put('Hello world!')
+}
+introducing()
+                </code></pre>
+            </div>
+            <div class="buttons">
+                <a href="https://github.com/slavlned/polar/releases">Download</a>
+            </div>
+        </div>        
+    </div>
+</section>
+
+<section class="info-section", id="about">
+    <div class="info-text">
+        <h2>Why Polar?</h2>
+        <p>Polar is designed to simplify programming experience and provide powerfull tools. Polar
+        is dynamically typed, what
+        makes writing code easier. Easy syntax
+        to learn and use.
+        Here is example of multithreading.</p>
+    </div>
+    <div class="code-snippet language-polar">
+        <pre class="code-pre code-snippet-code"><code>
+use 'lib.tasks'
+
+func powerfull_thread1() = {
+    put('Some thread!')
+}
+
+func powerfull_thread2() = {
+    put('Some thread 2!')
+}
+
+Tasks.exec(powerfull_thread1, [])
+Tasks.exec(powerfull_thread2, [])
+        </code></pre>
+    </div>    
+</section>
+
+<section class="info-section", id="about">
+    <div class="code-snippet language-polar">
+        <pre class="code-pre code-snippet-code"><code>
+put('Hello from Polar!')
+        </code></pre>
+    </div>       
+    <div class="info-text">    
+        <h2>Getting started</h2>
+        <p>Easy to learn, easy to use. 
+        Great & easy-to-read documentation.</p>
+    </div>
+</section>
+
+<section class="info-section", id="about">    
+    <div class="info-text">    
+        <h2>Community</h2>
+        <p>Join the growing Polar community. 
+        Collaborate, share ideas, and contribute
+        to the future of programming with Polar.</p>
+    </div>
+    <div class="code-snippet language-polar">
+        <pre class="code-pre code-snippet-code"><code>
+name = scan('enter your name to the Polar history: ')
+put('Hello: ' + name)
+        </code></pre>
+    </div>       
+</section>
+
+<footer>
+    <p>&copy; 2025 Polar Programming Language. <a href="https://t.me/polarlang">Our blog</a></p>
+</footer>
+
+</body>
+</html>

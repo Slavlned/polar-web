@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: Rubik, sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    opacity: 0.8;
+    color: #d1eeff;
+    background-color: rgba(1, 18, 28, 0.75);
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none !important;
+    color: white;
+}
+
+nav a:hover {
+    color: #acd2fa;
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: url('https://cms.finnair.com/resource/blob/3240298/d8532512ae8eccae0288561defb18063/finnair-lapland-aurora-sky-woodpecker2-data.jpg?impolicy=crop&width=2421&height=1362&x=789&y=0&imwidth=608') 
+    */
+    background: url('https://ik.imagekit.io/tvlk/blog/2024/09/shutterstock_2431203969.jpg?tr=q-70,c-at_max,w-500,h-250,dpr-2') no-repeat
+    no-repeat center center/cover;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.90));
+    z-index: 1;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    position: relative;
+}
+
+.hero h1::before {
+    content: "\2744"; /* Unicode for snowflake */
+    font-size: 6rem;
+    color: #59c2ff;
+    text-shadow: 0 0 5px #000, 0 0 5px #03a1fc;
+    position: absolute;
+    top: -6.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.code-example {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: monospace;
+    display: inline-block;
+    text-align: left;
+    max-width: 90%;
+    overflow-x: auto;
+}
+
+.language-polar .token.operator {
+    color: #349eeb;
+    background: none !important;
+}
+
+.language-polar .token.identifier {
+    color: #72c3e0 !important;
+    background: none !important;    
+}
+
+.language-polar {
+    overflow: hidden !important;  /* Отключаем прокрутку */
+    overflow-block: hidden;
+}
+
+.code-pre {
+    display: flex;
+    justify-content: flex-start;  /* Горизонтальное выравнивание слева */
+    align-items: center;
+    width: 250px;
+    height: 100px;    
+}
+
+/* Убираем белый фон */
+pre, code {
+    background: transparent !important ;  /* Убираем фон */
+    color: inherit;  /* Наследуем цвет текста от родительского элемента */
+    border: none;  /* Убираем рамку (если есть) */
+    text-shadow: none !important;  /* Убираем тень */    
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons a {
+    text-decoration: none;
+    background-color: #349eeb;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.buttons a:hover {
+    background-color: #45a049;
+}
+
+footer {
+    margin-top: 0px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #59c2ff !important;
+    text-decoration: none;
+}
+
+
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 70px;
+    background: rgba(0,0,0,0.85);
+}
+
+.info-section:nth-of-type(odd) {
+    background: linear-gradient(to bottom, rgba(42, 82, 152, 0.8), rgba(30, 60, 114, 0.9));
+}
+
+.info-text {
+    flex: 1;
+    text-align: left;
+    max-width: 600px;
+}
+
+.info-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.code-snippet {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: monospace;
+    text-align: left;
+    max-width: 600px;
+    overflow-x: auto;
+    background: rgba(0,0,0,0.25);    
+}
+
+.code-snippet-code {
+    position: relative;
+    height: auto;
+    min-height: 100% !important;
+    width: 100%;
+}
